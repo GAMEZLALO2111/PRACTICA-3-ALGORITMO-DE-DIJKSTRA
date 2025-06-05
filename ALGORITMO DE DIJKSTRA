@@ -1,0 +1,71 @@
+¿Qué es un algoritmo de Dijkstra? 
+
+El algoritmo de Dijkstra es un algoritmo voraz que encuentra la ruta más corta entre un nodo inicial y todos los demás nodos en un grafo ponderado. Este algoritmo es comúnmente usado para encontrar la ruta más rápida entre dos puntos en una red.  
+
+Introducción a los grafos 
+
+Conceptos básicos 
+
+Los grafos son estructuras de datos usadas para representar "conexiones" entre pares de elementos. 
+
+Estos elementos se llaman nodos.  
+
+Representan objetos reales, personas o entidades. 
+
+Las conexiones entre los nodos se llaman aristas o arcos. 
+
+Esta es una representación gráfica de un grafo: 
+
+Imagen 
+
+Los nodos se representan como círculos de colores y los arcos se representan como líneas que conectan los círculos. 
+
+Tipos de grafos 
+
+No dirigido: si para cada par de nodos conectados, puedes ir de un nodo al otro en ambas direcciones. 
+
+Dirigido: si para cada par de nodos conectados, solo puedes ir de un nodo a otro en una dirección específica. Usamos flechas en lugar de líneas sencillas para representar arcos dirigidos. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+¿Para qué sirve el algoritmo de Dijkstra? 
+
+El algoritmo de Dijkstra sirve para encontrar el camino más corto entre dos nodos en un grafo ponderado, donde cada arista tiene un peso o costo asociado. Esencialmente, determina la ruta de menor costo desde un nodo origen a todos los demás nodos en el grafo.  
+
+El algoritmo funciona de la siguiente manera: 
+
+Inicialización: Se establece la distancia desde el nodo origen a sí mismo en 0 y la distancia a todos los demás nodos en infinito 
+
+ 
+
+Iteración: 
+
+Se selecciona el nodo no visitado con la distancia más corta desde el origen. 
+
+Se actualizan las distancias a los nodos vecinos del nodo seleccionado, considerando la distancia actual desde el origen más el peso de la arista que conecta al nodo seleccionado con su vecino. 
+
+ 
+
+Repetición: Se repite el paso 2 hasta que se hayan visitado todos los nodos. 
+
+Propósito y Usos 
+
+Con el algoritmo de Dijkstra, puedes encontrar la ruta más corta o el camino más corto entre los nodos de un grafo. Específicamente, puedes encontrar el camino más corto desde un nodo (llamado el nodo de origen) a todos los otros nodos del grafo, generando un árbol del camino más corto. 
+
+Este algoritmo es usado por los dispositivos GPS para encontrar el camino más corto entre la ubicación actual y el destino del usuario. Tiene amplias aplicaciones en la industria, especialmente en aquellas áreas que requieren modelar redes. 
+
+Aspectos básicos del algoritmo de Dijkstra 
+
+El algoritmo de Dijkstra básicamente inicia en el nodo que escojas (el nodo de origen) y analiza el grafo para encontrar el camino más corto entre ese nodo y todos los otros nodos en el grafo. 
+
+El algoritmo mantiene un registro de la distancia conocida más corta desde el nodo de origen hasta cada nodo y actualiza el valor si encuentra un camino más corto. 
+
+Una vez que el algoritmo ha encontrado el camino más corto entre el nodo de origen y otro nodo, ese nodo se marca como "visitado" y se agrega al camino. 
+
+El proceso continúa hasta que todos los nodos en el grafo han sido añadidos al camino. De esta forma, tenemos un camino que conecta al nodo de origen con todos los otros nodos siguiendo el camino más corto posible para llegar a cada uno de ellos. 
