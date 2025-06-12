@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun  7 11:50:48 2025
 
 Cruz Eduardo Gamez Rodriguez
 21110301
